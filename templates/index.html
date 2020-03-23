@@ -1,0 +1,36 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="top-pad">
+    <h3>Luis Planelles Developer</h3>
+    <hr>
+    <h4>Github projects</h4>
+    <a href="https://github.com/BirdOnTheBranch" target="_blank">my github</a>
+    <hr>
+    <table>
+      <tr>
+      {% for repo in repos %}
+        <h5>{{repo.name}}</h4>
+        <div><a href="{{ repo.url }}" target="_blank">{{ repo.url }}</a></div>
+        <h5>{{repo.description}}</h5>
+        <br>
+      {% endfor %}
+      </tr>
+    </table>
+    <hr>
+    <h4>Codewars records</h4>
+    <a href="https://www.codewars.com/users/BirdOnTheBranch?refreshed=true" target="_blank">my codewars</a> 
+    <hr>
+    {% for skill in skills %}
+    <table>
+      <tr>
+        <h5>{{skill.name}}</h5>
+        <h5>Honor: {{skill.honor}}</h5>   
+        <h5>Challenges: {{skill.completeChallenges}}</h5>
+      </tr>
+    </table>
+    <hr>
+    {% endfor %}
+  </div>
+{% endblock %}
