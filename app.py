@@ -41,10 +41,18 @@ def close_db(error):
         g.sqlite_db.close()
 
 
+def create_app():
+    """Creates the app with cache instance and Blueprints registered"""
+    app = Flask(__name__)
+    app.config['CACHE_TYPE'] = 'simple'
+
+    return app
+
+
 
 @app.route('/')
-def index():
-    """ Render apis github and codewars with user information in template """    
+def github_display():
+    """Render api github with user information in template """    
     
     #GitHub api information
     url_github = 'https://api.github.com/users/BirdOnTheBranch/repos'
@@ -57,24 +65,20 @@ def index():
             my_repos.append(repos)
 
 
-    #Codewars api information
+    # Codewars api information
     url_codewars = 'https://www.codewars.com/api/v1/users/BirdOnTheBranch'
     response = requests.get(url_codewars)
     if response.status_code == 200:
-        codewars_json = response.json()
+        stats = response.json()
         skills = {   
-            'name' : codewars_json['username'], 
-            'honor' : codewars_json['honor'], 
-            'completeChallenges' : codewars_json['codeChallenges']['totalCompleted']}
+            'leaderboard_position': stats['leaderboardPosition'],
+            'overall_rankname': stats['ranks']['overall']['name'],
+            'challenges_authored': stats['codeChallenges']['totalAuthored'],
+            'challenges_completed': stats['codeChallenges']['totalCompleted'],
+            'languages': stats['ranks']['languages']}
 
-        my_skills = []
-        my_skills.append(skills)
+    return render_template("index.html", repos=my_repos, skills=skills)
 
-
-    
-    return render_template("index.html", repos=my_repos, skills=my_skills)
-   
-    
 
 
 if __name__ == '__main__':

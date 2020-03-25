@@ -22,15 +22,16 @@
     <h4>Codewars records</h4>
     <a href="https://www.codewars.com/users/BirdOnTheBranch?refreshed=true" target="_blank">my codewars</a> 
     <hr>
-    {% for skill in skills %}
-    <table>
-      <tr>
-        <h5>{{skill.name}}</h5>
-        <h5>Honor: {{skill.honor}}</h5>   
-        <h5>Challenges: {{skill.completeChallenges}}</h5>
-      </tr>
-    </table>
-    <hr>
-    {% endfor %}
+      <h3>Leaderboard position: {{ skills.leaderboard_position }}</h3>
+      <h3>Overall rank name: {{ skills.overall_rankname }}</h3>
+      <h3>Challenges authored: {{ skills.challenges_authored }}</h3>
+      <h3>Challenges completed: {{ skills.challenges_completed }}</h3>
+      <hr>
+      {% for language, stats in skills.languages.items() %}
+          <h4>{{ language }}</h4>
+          <div>{{ stats.name }}</div>
+          <div>{{ stats.score }}</div>
+          <hr>
+      {% endfor %}
   </div>
 {% endblock %}
