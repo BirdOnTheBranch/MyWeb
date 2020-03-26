@@ -403,6 +403,7 @@
 }
 .icon-badge:before {
   content: "\e028";
+  color: white;
 }
 .icon-anchor:before {
   content: "\e029";
