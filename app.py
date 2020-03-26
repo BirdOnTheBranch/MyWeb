@@ -71,6 +71,7 @@ def github_display():
     if response.status_code == 200:
         stats = response.json()
         skills = {   
+            'username': stats['username'],
             'leaderboard_position': stats['leaderboardPosition'],
             'overall_rankname': stats['ranks']['overall']['name'],
             'challenges_authored': stats['codeChallenges']['totalAuthored'],
@@ -82,6 +83,6 @@ def github_display():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port= 8000, host='0.0.0.0')
 
 

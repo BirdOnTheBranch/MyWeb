@@ -56,6 +56,7 @@ class MainTestCase(unittest.TestCase):
     ]
 
     mock_codewars_stats = {
+        'username': 'Adrian Lamo',
         'leaderboardPosition': 420,
         'codeChallenges': {
             'totalAuthored': 1,
@@ -101,7 +102,6 @@ class MainTestCase(unittest.TestCase):
         response = tester.get('/', content_type='html/text')
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'9000', response.data)
-
 
 
 if __name__ == '__main__':
