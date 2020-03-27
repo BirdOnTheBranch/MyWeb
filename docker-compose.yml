@@ -1,9 +1,13 @@
 version: '3'
 
 services:
+  test:
+    build: .
+    command: python apptest.py
+    
   web:
     build: .
-    command: ./entrypoint.sh
+    command: python app.py
     volumes:
       - .:/my-web
       - .db_data/schema.sql:/schema.sql

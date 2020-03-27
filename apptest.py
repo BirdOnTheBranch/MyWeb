@@ -1,7 +1,9 @@
 from app import app, create_app
 from nose.tools import assert_true, assert_is_none, assert_list_equal
 from mock import Mock, patch
+
 from app import github_display
+
 import responses
 import requests
 import unittest 
@@ -9,11 +11,11 @@ import os
 
 
 class WebTestCase(unittest.TestCase):
-    """Test app web-personal."""
+    """Test simple app web-personal."""
 
 
     def test_index(self):
-        """Index path render template."""
+        """Index path render html template."""
         tester = app.test_client(self)
         response = tester.get('/', content_type='html/text')
         self.assertEqual(response.status_code, 200)
@@ -26,21 +28,14 @@ class WebTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 404)
 
 
-    def test_request_response(self):
-        """Valid json dict api codewars in template"""
-        tester = app.test_client(self)
-        response = tester.get('/')
-        self.assertIn('Codewars records', response.data)
-
-
     def test_database (self): 
         """Create data base."""
         tester = os.path.exists ("flaskr.db") 
         self.assertTrue(tester)
 
 
-class MainTestCase(unittest.TestCase):
-    """Class with basic tests."""
+class ApisTestCase(unittest.TestCase):
+    """testing apis mock json and response."""
 
     mock_repos = [
         {
@@ -57,9 +52,8 @@ class MainTestCase(unittest.TestCase):
 
     mock_codewars_stats = {
         'username': 'Adrian Lamo',
-        'leaderboardPosition': 420,
+        'honor': 420,
         'codeChallenges': {
-            'totalAuthored': 1,
             'totalCompleted': 77,
         },
         'ranks': {
@@ -68,8 +62,6 @@ class MainTestCase(unittest.TestCase):
             },
             'languages': {
                 'python': {
-                    'name': '4 kyu',
-                    'score': 9000,
                 }
             }
         }
@@ -78,7 +70,7 @@ class MainTestCase(unittest.TestCase):
 
     def setUp(self):
         """Set up test environment."""
-        super(MainTestCase, self).setUp()
+        super(ApisTestCase, self).setUp()
         app = create_app()
         app.config['TESTING'] = True
         app.config['WTF_CSRF_ENABLED'] = False
@@ -101,7 +93,21 @@ class MainTestCase(unittest.TestCase):
         tester = app.test_client(self)
         response = tester.get('/', content_type='html/text')
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'9000', response.data)
+        self.assertIn(b'Adrian Lamo', response.data)
+
+
+# class BlogTestCase(unittest.TestCase):
+#     """Testing blog view."""
+
+#     def test_saved_if_not_logged(self):
+#         """ For user not registered url is saved in data base """
+#         self.client.post('/', data={'title':'Shorten-urls-project'})
+#         links = Link.objects.all()
+#         self.assertEqual(1, len(links))
+#         genereated_code = Link.objects.get(title="shorten-urls-proyect")
+#         self.assertIsNone(genereated_code.usuario)
+        
+
 
 
 if __name__ == '__main__':

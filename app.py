@@ -72,9 +72,8 @@ def github_display():
         stats = response.json()
         skills = {   
             'username': stats['username'],
-            'leaderboard_position': stats['leaderboardPosition'],
+            'honor' : stats['honor'], 
             'overall_rankname': stats['ranks']['overall']['name'],
-            'challenges_authored': stats['codeChallenges']['totalAuthored'],
             'challenges_completed': stats['codeChallenges']['totalCompleted'],
             'languages': stats['ranks']['languages']}
 
