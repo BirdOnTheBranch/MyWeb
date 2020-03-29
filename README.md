@@ -27,8 +27,8 @@ Successfully tagged corta_urls_web:latest
 ...
 
 
--Second run the server sqlite3 in background, and
-conect your host at django-server
+-Second run the server in background, and
+conect your host at Flask-server
 
 
 $ docker-compose up -d
@@ -46,18 +46,6 @@ To run the application, open a terminal and call `docker-compose run` migrate yo
 
 $ docker-compose run web
 
-
-You should get an output like this:
-
-...
-Apply database migrations
-Operations to perform:
-  Apply all migrations: admin, auth, contenttypes, core, registration, sessions
-...
-...
-Starting development server at http://0.0.0.0:8000/
-Quit the server with CONTROL-C.
-...
 
 welcome to corta_urls.
 

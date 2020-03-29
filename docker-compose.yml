@@ -3,11 +3,11 @@ version: '3'
 services:
   test:
     build: .
-    command: python apptest.py
+    command: python test_view.py
     
   web:
     build: .
-    command: python app.py
+    command: python main.py
     volumes:
       - .:/my-web
       - .db_data/schema.sql:/schema.sql
