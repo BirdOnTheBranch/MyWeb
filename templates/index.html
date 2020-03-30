@@ -81,7 +81,7 @@
                         <ul class="list-inline">
                             <li><a href="https://twitter.com/WaneEmece" class="social-icons" target="_blank"><i class="icon-social-twitter"></i></a></li>
                             <li><a href="https://github.com/BirdOnTheBranch" class="social-icons" target="_blank"><i class="icon-social-github"></i></a></li>
-                            <li><a href="https://es.linkedin.com/" class="social-icons" target="_blank"><i class="icon-social-linkedin"></i></a></li>
+                            <li><a href="https://linkedin.com/in/jose-luis-planelles-2704281a5" class="social-icons" target="_blank"><i class="icon-social-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -102,16 +102,28 @@
                         </div>
                     </div>  
                     <div class="col-sm-8 col-sm-offset-1">
+                       
                         <div class="margin-b-60" >
-                            <p>Soy desarrollador back-end, vivo en Alicante y me apasiona programar.</p>
-                            <p>He desarrollado mi amor por el código de manera autodidacta, completando cursos en Udemy.com, recibiendo clases
-                            individuales junto a muchas horas de prácticas, google keep y Stackoverflow. Manejo Linux, Htlm, Css y Javascript
-                            con solvencia. Durante dos años he adquirido un conocimiento profundo en Python, que empleo creando aplicaciones
-                            web con el framework Django o el micro-framework Flask. Mi nivel de inglés es intermedio y continúo aprendiendo cada día.
-                            <br><br>   
-                            Esta página a modo de currículum está desarrollada en Flask version 1.1.1 usa TDD con mocks y carga datos de las apis de 
-                            GitHub y Codewars. Yo la he desplegado en un dominio web de Pythonenewhere.com pero si lo prefieres,puedes descargarla 
-                            en GitHub o GitLab y levantarla en tu computadora desde una imagen de Ubuntu con Docker.</p><br>
+                        <style> #heading { color: #a6a7aa; font-size: 17px;}</style>
+                            <br><br>
+                            <h5 id="heading">Soy desarrollador back-end, vivo en Alicante y me apasiona programar.
+                            <br><br>
+                            Mi formación se ha basado en cursos de diferentes plataformas online como Udemy.com 
+                            y codecademy.com, así como recibiendo clases individuales junto a muchas horas de prácticas. 
+                            Dejando abandonado Netflix para buscar preguntas en Stackoverflow.
+                            <br><br>
+                            He desarrollado aplicaciones en Python desde hace dos años, usando los frameworks más conocidos, 
+                            tanto Django como Flask. También uso Docker para facilitar la portabilidad y compatibilidad 
+                            de mis proyectos, dedicando tiempo realizar buenas prácticas y código limpio. Manejo 
+                            Linux, HTML, CSS y Javascript con solvencia.
+                            <br><br> 
+                            Esta página a modo de CV es una aplicación Flask (v 1.1.1) que recibe datos desde las APIs de GitHub 
+                            y Codewars. La app se ha desarrollado usando TDD y mocks en los tests.
+                            <br>
+                            La página está alojada en un dominio web de Pythonanywhere.com, aunque está accesible como un repositorio 
+                            público tanto en GitHub como en GitLab.
+                            Puedes clonar el repositorio y lanzarla localmente desde una imagen de Ubuntu con Docker, cuya configuración 
+                            también está incluida en el código fuente.</h4><br><br><br>
                         </div>
                             <ul class="list-inline">
                                 <img src="{{ url_for('static', filename='img/logos.png') }}"  class="img-responsive aling-right"></img>
@@ -124,7 +136,6 @@
         <!-- End About -->
 
         <!-- Experience -->
-        <div id="experience">
             <div class="bg-color-sky-light" data-auto-height="true">
                 <div class="container content-lg">
                     <div class="row">
@@ -159,27 +170,28 @@
                                         <a href="https://github.com/BirdOnTheBranch" class="content-wrapper-link" target="_blank"></a>    
                                     </div>
                                 </div>
-                                <div class="col-md-4 md-margin-b-4">
-                                    <div class="service bg-color-base" data-height="height" >
+                                <div class="col-md-4 md-margin-b-4" style="background-color:#17bed2">
+                                    <div class="service-element col-md-11" >
                                         <div class="service-element">
-                                            <i class="service-icon color-white icon-badge"></i>
-                                            <div class="service-info"  >
-                                                <h3>Udemy</h3><br>
+                                            <div style="font-size: 25px;">    
+                                                <br><i class="service-icon color-white icon-badge"></i>
+                                            </div>
+                                            <br>  
+                                            <h3>Udemy</h3><hr>
                                             <p class="margin-b-5 color-white">"Python de 0 a experto"<br> 21 horas de video y 143 clases.</p><hr>
                                             <p class="margin-b-5 color-white">"Curso practico de Django"<br> 12 horas de video y 103 clases.</p><hr>
                                             <p class="margin-b-5 color-white">"Aprende a crear webs Html/Css"<br> 7 horas de video y 72 clases.</p><hr> 
                                             <p class="margin-b-5 color-white">"Master en JavaScript: jQuery, JSON, TypeScript, Angular, Node MEAN"<br> 35,5 horas de video y 291 clases</p><hr>
                                             <p class="margin-b-5 color-white">"GNU/Linux"<br> 6,5 horas de video y 50 clases.</p><hr> 
-                                            <p class="margin-b-5 color-white">"Git y Github completo"<br> 4,5 horas de video y 50 clases.</p>    
-                                            </p><hr>    
-                                            </div>  
+                                            <p class="margin-b-5 color-white">"Git y Github completo"<br> 4,5 horas de video y 50 clases.</p><hr>    
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="service" data-height="height">
                                         <div class="service-element">
-                                            <i class="service-icon icon-screen-tablet"></i>
+                                            
+                                                <i class="service-icon icon-screen-tablet"></i>
                                         </div>
                                         <div class="service-info">
                                             <h4>Codewars records</h4>
@@ -223,7 +235,6 @@
             </div>
         </div>
         <!-- End Experience -->
-  
 
         <!-- Work -->
         <div id="work">
@@ -232,7 +243,7 @@
                     <div class="col-sm-3 sm-margin-b-30">
                         <div class="text-right sm-text-left">
                             <h2 class="margin-b-0">Trabajos</h2>
-                            <p>I love the code</p>
+                            <p>Mi codigo</p>
                         </div>
                     </div>
                     <div class="col-sm-8 col-sm-offset-1">
@@ -255,10 +266,11 @@
                                             <div class="row">
                                                 <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                     <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Web personal para una estilista y maquilladora freelance. Está desarrollada con TDD y usa un formulario de contacto con
-                                                        validación y envío de emails. Consta de dos configuraciones; una en Outlook.com y otra en Gmail.com. Es un proyecto desarrollado
-                                                        en Django versión 3.0.2 con una base de datos SQL y plantillas bootstrap. Se puede gestionar desde un panel de administrador que 
-                                                        permite al usuario crear, borrar, o editar, las entradas de su blog.
+                                                        <p>Está web personal para una estilista y maquilladora freelance. Es una aplicación de Django (v 3.0.2) con una base de datos SQL y 
+                                                        plantillas Bootstrap. 
+                                                        </p>
+                                                        <p>Está desarrollada con TDD y usa un formulario de contacto con validación. Consta de dos configuraciones; una para Outlook.com y otra 
+                                                        para Gmail.com. Se puede gestionar desde un panel de administrador que permite al usuario crear, borrar, o editar las entradas del blog.
                                                         </p>
                                                         <!--<ul class="list-inline work-popup-tag">
                                                             <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
@@ -289,21 +301,23 @@
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">minimizar</a>
+                                            <a href="javascript:void(0);" class="work-popup-close">Minimizar</a>
                                             <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Shorten urls</h3>
-                                                <span>App web para crear urls cortas</span>
+                                                <h3 class="margin-b-5">Proyecto Url-shortener</h3>
+                                                <span> Recorta urls</span>
                                             </div>
                                             <div class="row">
                                                 <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                     <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Esta app usa un token aleatorio de cinco dígitos, importando los métodos random y string de Python. Carga un formulario,
-                                                        y usando la lógica y los métodos get y post, transforma la url que introduce el usuario en el template, en un código, que redirecciona
-                                                        al sito web de la url original.<br>
-                                                        El programa guarda las urls y los códigos en una base de datos SQL y si el usuario lo desea, puede registrarse y gestionar su página 
-                                                        perfil, con las urls y códigos que él mismo almacena. La app se puede gestionar a través de un panel del admin, está desarrollada con TDD
-                                                        y usa plantillas Bootstrap. Se puede levantar en cualquier computadora através de una imagen de Ubuntu en Docker.
-                                                    </p>
+                                                        <p>Esta app permite al usuario introducir una dirección web en su página principal, donde podrá transformarla
+                                                        en un código de cinco dígitos que funcionara como la url original. <a class="btn-link" href="https://bitly.com/">ejemplo</a>.
+                                                        </p> 
+                                                        <p>La aplicación programada en Django (v 3.0.2) guarda las urls y los códigos en una base de datos SQL y si el usuario lo desea, 
+                                                        puede registrarse y administrar su página de perfil con las urls y códigos que él mismo haya almacenado. La app se puede gestionar 
+                                                        a través del admin panel. Para el desarrollo se ha usado TDD y plantillas Bootstrap para el frontend. 
+                                                        </p>
+                                                        <p>Se puede ejecutar localmente en cualquier ordenador a través de una imagen Ubuntu en Docker. El link al proyecto en github 
+                                                        <a class="btn-link" href="https://github.com/BirdOnTheBranch/shorten-urls">está aquí</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -320,105 +334,26 @@
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
+                                            <a href="javascript:void(0);" class="work-popup-close">Minimizar</a>
                                             <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Mi web</h3>
-                                                <span>Web personal a modo de curriculum</span>
+                                                <h3 class="margin-b-5">My Web CV</h3>
+                                                <span>Curriculum</span>
                                             </div>
                                             <div class="row">
                                                 <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                     <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Esta página a modo de currículum, está desarrollada en Flask en su versión 1.1.1, y corre TDD con mocks, para comprobar
-                                                        la correcta carga de datos, desde las apis de GitHub y Codewars, con ayuda de la librería request de Python. Está desplegada, 
-                                                        en una web de Pythonenewhere.com y también se puede levantar, en una computadora desde una imagen de Ubuntu en Docker.</p>
+                                                        <p>Esta página a modo de CV está desarrollada en Flask (v 1.1.1), y carga mi información de usuario desde las apis de 
+                                                        GitHub y Codewars con ayuda de la <a class="btn-link" href="https://LuisPlanelles.pythonanywhere.com">librería requests</a> 
+                                                        de Python.<br> 
+                                                        Está alojada en Pythonanywhere.com, y también se puede ejecutar en local desde una imagen de Ubuntu en Docker, para ello 
+                                                        aquí está el link al proyecto en <a class="btn-link" href="https://github.com/BirdOnTheBranch/my-web">Github</a>.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- End Work 
-                            </div>
-                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
-                                <!-- Work 
-                                <div class="work work-popup-trigger">
-                                    <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="{{ url_for('static', filename='img/397x300/02.jpg') }}"  alt="Portfolio Image">
-                                    </div>
-                                    <div class="work-popup-overlay">
-                                        <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                            <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                                <span>Clean &amp; Minimalistic Design</span>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                        <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Work 
-                            </div>
-                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-                                <!-- Work 
-                                <div class="work work-popup-trigger">
-                                    <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="{{ url_for('static', filename='img/397x300/03.jpg') }}"  alt="Portfolio Image">
-                                    </div>
-                                    <div class="work-popup-overlay">
-                                        <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                            <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                                <span>Clean &amp; Minimalistic Design</span>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                        <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Work 
-                            </div>
-                        </div>
-                        <!-- End Masonry Grid -->
+                                <!-- End Work -->
                     </div>
                 </div>
                 <!--// end row -->
@@ -434,26 +369,26 @@
                         <div class="col-sm-3 sm-margin-b-30">
                             <div class="text-right sm-text-left">
                                 <h2 class="margin-b-0">Contacto</h2>
-                                <p>Mis datos personales.</p>
+                                <p>Datos personales.</p>
                             </div>
                         </div>
                         <div class="col-sm-8 col-sm-offset-1">
                             <div class="row">
                                 <div class="col-md-3 col-xs-6 md-margin-b-30">
                                     <h5>Location</h5>
-                                    <a href="#">Alicante (España)</a>
+                                    <a>Alicante (España)</a>
                                 </div>
                                 <div class="col-md-3 col-xs-6 md-margin-b-30">
                                     <h5>Phone</h5>
-                                    <a href="#">+34 640 28  5 974</a>
+                                    <a>+34 640 28  5 974</a>
                                 </div>
                                 <div class="col-md-3 col-xs-6">
                                     <h5>Email</h5>
-                                    <a href="mailto:#">Planelles.luis@gmail.com</a>
+                                    <a>Planelles.luis@gmail.com</a>
                                 </div>
                                 <div class="col-md-3 col-xs-6">
                                     <h5>Web</h5>
-                                    <a href="https://LuisPlanelles.pythonanywhere.com"><Github class="com">LuisPlanelles.pythonanywhere.com</Github></a>
+                                    <a class="btn-link" href="https://LuisPlanelles.pythonanywhere.com">LuisPlanelles.pythonanywhere.com</a>
                                 </div>
                             </div>
                         </div>
@@ -463,7 +398,16 @@
             </div>
         </div>
         <!-- End Contact -->
-
+        <footer class="footer">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-0 text-right">
+                        <p class="margin-b-0" ><a class="fweight-700">LP</a> Web Developer: <a >BirdOnTheBranch  </a></p>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </footer>
         <!--========== END PAGE LAYOUT ==========-->
 
         <!-- Back To Top -->

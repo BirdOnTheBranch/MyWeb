@@ -2,7 +2,6 @@ from flask import Flask, render_template
 import requests
 
 
-
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
@@ -12,7 +11,6 @@ def create_app():
     app.config['CACHE_TYPE'] = 'simple'
 
     return app
-
 
 
 @app.route('/')

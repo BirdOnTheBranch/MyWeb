@@ -1,18 +1,10 @@
-from app import app, github_display
-from nose.tools import assert_true, assert_is_none, assert_list_equal
+from flask import Flask
+from main import github_display, app, create_app
 
 import responses
 import requests
 import unittest 
 import os 
-
-
-def create_app():
-    """Creates the app """
-    app = Flask(__name__)
-    app.config['CACHE_TYPE'] = 'simple'
-
-    return app
 
 
 class WebTestCase(unittest.TestCase):

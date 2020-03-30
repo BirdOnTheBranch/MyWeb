@@ -404,6 +404,7 @@
 .icon-badge:before {
   content: "\e028";
   color: white;
+  size: 20px;
 }
 .icon-anchor:before {
   content: "\e029";
