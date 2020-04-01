@@ -1,0 +1,28 @@
+
+{% extends 'index.html'%}
+{% block github %}         
+<div class="col-sm-8 col-sm-offset-1">
+    <div class="row row-space-2 margin-b-4">
+        <div class="col-md-4 md-margin-b-4">
+            <div class="service" data-height="height">
+                <div class="service-element">
+                    <i class="service-icon icon-chemistry"></i>
+                </div>
+                <div class="service-info">
+                    <h4>My Github</h4>
+                    <hr>
+                    <table>
+                    <tr>
+                    {% for repo in repos %}
+                        <h5>{{repo.name}}</h4>
+                        <a>{{repo.description}}</a>
+                        <br>
+                    </tr>
+                    </table>
+                    <hr>
+                    {% endfor %}
+                </div>
+                <a href="https://github.com/BirdOnTheBranch" class="content-wrapper-link" target="_blank"></a>    
+            </div>
+        </div>
+{% endblock %}
