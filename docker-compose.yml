@@ -3,13 +3,12 @@ version: '3'
 services:
   test:
     build: .
-    command: python test_view.py
+    command: python test.py
     
   web:
     build: .
     command: python main.py
     volumes:
       - .:/my-web
-      - .db_data/schema.sql:/schema.sql
     ports:
       - "8000:8000"

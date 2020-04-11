@@ -11,7 +11,7 @@ RUN pip install -r requirements.txt
 #COPY ./entrypoint.sh /
 #ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 5000
-CMD python hello.py
+CMD python main.py
 
 
 

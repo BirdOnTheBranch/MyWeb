@@ -40,6 +40,8 @@ def github_display():
             'challenges_completed': stats['codeChallenges']['totalCompleted'],
             'languages': stats['ranks']['languages']}
 
+
+
     return render_template("index.html", repos=my_repos, skills=skills)
 
 
