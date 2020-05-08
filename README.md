@@ -53,8 +53,6 @@ Successfully tagged corta_urls_web:latest
 
 ## Starting the application
 
-&nbsp;
-
 To run the application, open a terminal and call `docker-compose run` and migrate your data base and using the port `0.0.0.0:8000`
 
 
