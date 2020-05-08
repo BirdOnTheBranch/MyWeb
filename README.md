@@ -1,21 +1,27 @@
 # MyWeb
-I develop my personal web site with Flask.
+&nbsp;
 
-# Run app 
+>I develop my personal web site with Flask.
 
--You need docker "https://www.docker.com/"
+&nbsp;
+
+---
+
+## Run app 
+&nbsp;
+
+You need docker "https://www.docker.com/"
+*Ensure you have Docker installed in your system.*
+
+**-First we build the docker-compose.**
 
 
-Ensure you have Docker installed in your system.
+`$ docker-compose build`  
 
--First we build the docker-compose
+*You should get an output like this:*
 
-
-$ docker-compose build  
-
-You should get an output like this:
-
-...
+```
+ ...
 Step 1/5 : FROM python:3.8-slim-buster
 3.8-slim-buster: Pulling from library/python
 ...
@@ -24,32 +30,49 @@ Step 1/5 : FROM python:3.8-slim-buster
 ---> a1c95d6a940f
 Successfully built a1c95d6a940f
 Successfully tagged corta_urls_web:latest
-...
+
+```
 
 
--Second run the server in background, and
-conect your host at Flask-server
+**-Second run the server in background, and conect your host at Flask-server.**
 
 
-$ docker-compose up -d
+`$ docker-compose up -d`
 
 
-You should get an output like this:
+*You should get an output like this:*
 
-Creating my-web_web ... done
+`Creating my-web_web ... done`
 
+&nbsp;
+
+---
 
 ## Starting the application
+
+&nbsp;
 
 To run the application, open a terminal and call `docker-compose run` migrate your data base and using the port `0.0.0.0:8000`
 
 
-$ docker-compose run web
+`$ docker-compose run web`
+&nbsp;
 
+*welcome to corta_urls.*
 
-welcome to corta_urls.
+&nbsp;
+
+---
 
 ## Starting the test
 
-$ docker-compose run test
+`$ docker-compose run test`
 
+&nbsp;
+
+---
+
+**Built with:**
+* [Python 3](https://www.python.org/download/releases/3.0/ "Python 3") - v3.7.2
+* [Django 2](https://docs.djangoproject.com/en/3.0/ "Django 2") - 3.0.2
+* [Docker](https://www.docker.com/ "Docker"): Tool to create, deploy and run applications using containers. v19.03.5, build 633a0ea
