@@ -1,3 +1,4 @@
+&nbsp;
 # MyWeb
 &nbsp;
 
@@ -8,10 +9,13 @@
 ---
 
 ## Run app 
+
 &nbsp;
 
 You need docker "https://www.docker.com/"
 *Ensure you have Docker installed in your system.*
+
+&nbsp;
 
 **-First we build the docker-compose.**
 
@@ -32,12 +36,15 @@ Successfully built a1c95d6a940f
 Successfully tagged corta_urls_web:latest
 
 ```
+&nbsp;
 
 
 **-Second run the server in background, and conect your host at Flask-server.**
 
 
 `$ docker-compose up -d`
+
+&nbsp;
 
 
 *You should get an output like this:*
@@ -56,6 +63,7 @@ To run the application, open a terminal and call `docker-compose run` migrate yo
 
 
 `$ docker-compose run web`
+
 &nbsp;
 
 *welcome to corta_urls.*
@@ -67,6 +75,10 @@ To run the application, open a terminal and call `docker-compose run` migrate yo
 ## Starting the test
 
 `$ docker-compose run test`
+
+**-Tests for:**
+ * Test to check the correct working to the app.
+ * Test to check the datas of the apis whit mocks.
 
 &nbsp;
 
