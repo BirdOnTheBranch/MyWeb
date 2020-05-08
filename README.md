@@ -1,6 +1,5 @@
 &nbsp;
 # MyWeb
-&nbsp;
 
 >I develop my personal web site with Flask.
 
@@ -10,7 +9,6 @@
 
 ## Run app 
 
-&nbsp;
 
 You need docker "https://www.docker.com/"
 *Ensure you have Docker installed in your system.*
@@ -44,8 +42,6 @@ Successfully tagged corta_urls_web:latest
 
 `$ docker-compose up -d`
 
-&nbsp;
-
 
 *You should get an output like this:*
 
@@ -59,7 +55,7 @@ Successfully tagged corta_urls_web:latest
 
 &nbsp;
 
-To run the application, open a terminal and call `docker-compose run` migrate your data base and using the port `0.0.0.0:8000`
+To run the application, open a terminal and call `docker-compose run` and migrate your data base and using the port `0.0.0.0:8000`
 
 
 `$ docker-compose run web`
@@ -76,7 +72,7 @@ To run the application, open a terminal and call `docker-compose run` migrate yo
 
 `$ docker-compose run test`
 
-**-Tests for:**
+**Tests for:**
  * Test to check the correct working to the app.
  * Test to check the datas of the apis whit mocks.
 
