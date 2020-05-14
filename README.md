@@ -3,6 +3,9 @@
 
 >I develop my personal web site with Flask.
 
+
+If you want to visit it, click here: [Luisplanelles.com](https://www.luisplanelles.com/)
+
 &nbsp;
 
 ---
@@ -31,10 +34,9 @@ Step 1/5 : FROM python:3.8-slim-buster
 ...
 ---> a1c95d6a940f
 Successfully built a1c95d6a940f
-Successfully tagged corta_urls_web:latest
+Successfully tagged myweb_web:latest
 
 ```
-&nbsp;
 
 
 **-Second run the server in background, and conect your host at Flask-server.**
@@ -58,11 +60,20 @@ To run the application, open a terminal and call `docker-compose run` and migrat
 
 `$ docker-compose run web`
 
+*You should get an output like this:*
+
+```
+Starting server
+ * Serving Flask app "my-web"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+```
+
 &nbsp;
 
-*welcome to corta_urls.*
-
-&nbsp;
 
 ---
 
@@ -80,5 +91,10 @@ To run the application, open a terminal and call `docker-compose run` and migrat
 
 **Built with:**
 * [Python 3](https://www.python.org/download/releases/3.0/ "Python 3") - v3.7.2
-* [Django 2](https://docs.djangoproject.com/en/3.0/ "Django 2") - 3.0.2
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/ "Flask") - 1.1.1
 * [Docker](https://www.docker.com/ "Docker"): Tool to create, deploy and run applications using containers. v19.03.5, build 633a0ea
+
+&nbsp;
+&nbsp;
+
+**welcome to my-web.**
