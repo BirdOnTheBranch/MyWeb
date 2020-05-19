@@ -75,7 +75,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="promo-block-divider">
-                            <h1 class="promo-block-title">Luis <br/> Planelles</h1>
+                            <h1 class="promo-block-title">Luis<br/>Planelles</h1>
                             <p class="promo-block-text">Desarrollador Back-end </p>
                         </div>
                         <ul class="list-inline">
@@ -112,7 +112,7 @@
                             Mi formación se ha basado en cursos de diferentes plataformas online como <a class="btn-link" 
                             target="_blank" href="https://www.udemy.com/user/jose-luis-planelles/">Udemy.com</a> y <a class="btn-link" 
                             target="_blank" href="https://www.codecademy.com/">codecademy.com</a>, así como recibiendo clases 
-                            individuales, y acumulando muchas horas de prácticas. Dejè Netflix para buscar preguntas en 
+                            individuales, y acumulando muchas horas de prácticas. Abandoné Netflix, para buscar preguntas en 
                             <a class="btn-link" target="_blank" href="https://stackoverflow.com/">Stackoverflow</a>.
                             </p>
                             Desarrollo aplicaciones en Python usando los frameworks más conocidos, 
@@ -274,35 +274,33 @@
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="{{ url_for('static', filename='img/800x400/01.jpg') }}"  alt="Portfolio Image">
+                                        <img class="full-width img-responsive" src="{{ url_for('static', filename='img/800x400/02.jpg') }}"  alt="Portfolio Image">
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
                                             <a href="javascript:void(0);" class="work-popup-close">Minimizar</a>
                                             <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Proyecto Url-shortener</h3>
-                                                <span>Recorta urls</span>
+                                            <h3 class="margin-b-5">Web pictures</h3>
+                                                <span>Social media</span>
                                             </div>
                                             <div class="row">
                                                 <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                     <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Esta app permite al usuario introducir una dirección web en su página principal, donde podrá transformarla
-                                                        en un código de cinco dígitos que funcionara como la url original.
-                                                        </p>
-                                                        <p>La aplicación programada en Django (v 3.0.2) guarda las urls y los códigos en una base de datos SQL y si el usuario lo desea,
-                                                        puede registrarse y administrar su página de perfil con las urls y códigos que él mismo haya almacenado. La app se puede gestionar
-                                                        a través del admin panel. Para el desarrollo se ha usado TDD y plantillas Bootstrap para el frontend.
-                                                        </p>
-                                                        <p>Se puede ejecutar localmente en cualquier ordenador a través de una imagen Ubuntu en Docker.</p>
-                                                        
+                                                    <p>Web pictures alberga un sistema de registro de usuarios con email. Estos gestionan un perfil propio y pueden enviarse mensajes 
+                                                        entre si de forma asíncrona. Todas las publicaciones y perfiles se pueden crear, borrar y editar en tiempo real. Cuenta con un botón 
+                                                        like/dislike el cual funciona con un formulario, cuenta los 'likes' y los registra en la base de datos. 
+                                                        La web implementa un sistema de amigos para relacionar los usuarios que funciona desde el backend. 
+                                                        </p><p>
+                                                        La app ha sido desarrollada en Django-2.2, se apolla en Pillow-7.0.0 para gestionar las imágenes, y django-crispy-forms-1.9,
+                                                        para la estética de los formularios. Utiliza la librería django-cleanup-4.0.0 y así las imágenes 
+                                                        borradas desaparecen por completo de la app.</p>
+                                                    
                                                         <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" target="_blank" href="https://github.com/BirdOnTheBranch/shorten-urls">Proyecto en Github</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" target="_blank" href="https://shortylinks.pythonanywhere.com">www.Shortylinks.com</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" target="_blank" href="https://bitly.com/">Ejemplo web bitly.com</a></li>
+                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" target="_blank" href="https://github.com/BirdOnTheBranch/my-web">Proyecto Github</a></li>
+                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" target="_blank" href="http://webpictures.pythonanywhere.com/">Web desplegada en Pythonanywhere.com</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -310,41 +308,7 @@
                                 <!-- End Work -->
                             </div>
                             <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
-                                <!-- Work -->
-                                <div class="work work-popup-trigger">
-                                    <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="{{ url_for('static', filename='img/397x400/01.jpg') }}"  alt="Portfolio Image">
-                                    </div>
-                                    <div class="work-popup-overlay">
-                                        <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Minimizar</a>
-                                            <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Web Trabajo Freelance</h3>
-                                                <span>Laura Vogels</span>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Está web personal para una estilista y maquilladora freelance. Es una aplicación de Django (v 3.0.2) con una base de datos SQL y
-                                                        plantillas Bootstrap.
-                                                        </p>
-                                                        <p>Está desarrollada con TDD y usa un formulario de contacto con validación. Consta de dos configuraciones; una para Outlook.com y otra
-                                                        para Gmail.com. Se puede gestionar desde un panel de administrador que permite al usuario crear, borrar, o editar las entradas del blog.
-                                                        </p>
-                                                        
-                                                    </div>
-                                                        <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" target="_blank" href="https://www.lauravogellab.com/">Lauravogellab.com</a></li>
-                                                        </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Work -->
-                            </div>
-                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
-                                <!-- Work -->
+                            <!-- Work -->
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
                                         <img class="full-width img-responsive" src="{{ url_for('static', filename='img/397x300/01.jpg') }}"  alt="Portfolio Image">
@@ -367,72 +331,146 @@
                                                     <ul class="list-inline work-popup-tag">
                                                         <li class="work-popup-tag-item"><a class="work-popup-tag-link" target="_blank" href="https://github.com/BirdOnTheBranch/my-web">Proyecto Github</a></li>
                                                     </ul>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- End Work -->
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
-        </div>
-        <hr>
-
-        <!-- End Work -->
-            
-        <!-- Contact -->
-        <div id="contact">
-            <div class="bg-color-sky-light">
-                <div class="container content-lg">
-                    <div class="row">
-                        <div class="col-sm-3 sm-margin-b-30">
-                            <div class="text-right sm-text-left">
-                                <h2 class="margin-b-0">Contacto</h2>
-                                <p>Datos personales.</p>
+                            </div>
+                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
+                                <!-- Work -->
+                                <div class="work work-popup-trigger">
+                                    <div class="work-overlay">
+                                        <img class="full-width img-responsive" src="{{ url_for('static', filename='img/397x400/01.jpg') }}"  alt="Portfolio Image">
+                                    </div>
+                                    <div class="work-popup-overlay">
+                                        <div class="work-popup-content">
+                                            <a href="javascript:void(0);" class="work-popup-close">Minimizar</a>
+                                            <div class="margin-b-30">
+                                               <h3 class="margin-b-5">Web Trabajo Freelance</h3>
+                                                <span>Laura Vogels</span>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+                                                    <div class="margin-t-10 sm-margin-t-0">
+                                                        <p>Está web personal para una estilista y maquilladora freelance. Es una aplicación de Django (v 3.0.2) con una base de datos SQL y
+                                                        plantillas Bootstrap.
+                                                        </p>
+                                                        <p>Está desarrollada con TDD y usa un formulario de contacto con validación. Consta de dos configuraciones; una para Outlook.com y otra
+                                                        para Gmail.com. Se puede gestionar desde un panel de administrador que permite al usuario crear, borrar, o editar las entradas del blog.
+                                                        </p>
+                                                        
+                                                    </div>
+                                                        <ul class="list-inline work-popup-tag">
+                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" target="_blank" href="https://www.lauravogellab.com/">Lauravogellab.com</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    </div>
+                                    <div class="masonry-grid row row-space-2">
+                                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+                                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8 margin-b-4">
+                                    <!-- Work -->
+                                    <div class="work work-popup-trigger">
+                                        <div class="work-overlay">
+                                            <img class="full-width img-responsive" src="{{ url_for('static', filename='img/800x400/01.jpg') }}" alt="Portfolio Image">
+                                        </div>
+                                        <div class="work-popup-overlay">
+                                            <div class="work-popup-content">
+                                                <a href="javascript:void(0);" class="work-popup-close">Minimizar</a>
+                                                <div class="margin-b-30">
+                                                    <h3 class="margin-b-5">Proyecto Url-shortener</h3>
+                                                    <span>Recorta urls</span>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+                                                    <div class="margin-t-10 sm-margin-t-0">
+                                                    <p>Esta app permite al usuario introducir una dirección web en su página principal, donde podrá transformarla
+                                                    en un código de cinco dígitos que funcionara como la url original.</p>
+                                                    <p>La aplicación programada en Django (v 3.0.2) guarda las urls y los códigos en una base de datos SQL y si el usuario lo desea, 
+                                                    puede registrarse y administrar su página de perfil con las urls y códigos que él mismo haya almacenado. 
+                                                    La app se puede gestionar a través del admin panel. Para el desarrollo se ha usado TDD y plantillas Bootstrap 
+                                                    para el frontend.</p>
+                                                    <p> Se puede ejecutar localmente en cualquier ordenador a través de una imagen Ubuntu en Docker.</p><br>
+                                                </div>
+                                                <ul class="list-inline work-popup-tag">
+                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" target="_blank" href="https://github.com/BirdOnTheBranch/shorten-urls">Proyecto en Github</a></li>
+                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" target="_blank" href="https://shortylinks.pythonanywhere.com">www.Shortylinks.com</a></li>
+                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" target="_blank" href="https://bitly.com/">Ejemplo web bitly.com</a></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Work -->
                             </div>
                         </div>
-                        <div class="col-sm-8 col-sm-offset-1">
+                        <!--// end row -->
+                    </div>
+                </div>
+                <br><br><br>
+                <hr>
+                <!-- End Work -->
+                    
+                <!-- Contact -->
+                <div id="contact">
+                    <div class="bg-color-sky-light">
+                        <div class="container content-lg">
                             <div class="row">
-                                <div class="col-md-3 col-xs-6 md-margin-b-30">
-                                    <h5>Location</h5>
-                                    <a>Alicante (España)</a>
+                                <div class="col-sm-3 sm-margin-b-30">
+                                    <div class="text-right sm-text-left">
+                                        <h2 class="margin-b-0">Contacto</h2>
+                                        <p>Datos personales.</p>
+                                    </div>
                                 </div>
-                                <div class="col-md-3 col-xs-6 md-margin-b-30">
-                                    <h5>Phone</h5>
-                                    <a>+34 640 28  5 974</a>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <h5>Email</h5>
-                                    <a>Planelles.luis@gmail.com</a>
-                                </div>
-                                <div class="col-md-3 col-xs-6">
-                                    <h5>GitHub</h5>
-                                    <a class="btn-link" href="https://github.com/BirdOnTheBranch">Luis Planelles</a>
+                                <div class="col-sm-8 col-sm-offset-1">
+                                    <div class="row">
+                                        <div class="col-md-3 col-xs-6 md-margin-b-30">
+                                            <h5>Location</h5>
+                                            <a>Alicante (España)</a>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6 md-margin-b-30">
+                                            <h5>Phone</h5>
+                                            <a>+34 640 28  5 974</a>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                            <h5>Email</h5>
+                                            <a>Planelles.luis@gmail.com</a>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6">
+                                            <h5>GitHub</h5>
+                                            <a class="btn-link" href="https://github.com/BirdOnTheBranch">Luis Planelles</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <!--// end row -->
                         </div>
                     </div>
-                    <!--// end row -->
                 </div>
-            </div>
-        </div>
-        <!-- End Contact -->
-        <footer class="footer">
-            <div class="content container">
-                <div class="row">
-                    <div class="col-xs-0 text-right">
-                        <p class="margin-b-0" ><a class="fweight-700">LP</a> Web Developer: <a >BirdOnTheBranch  </a></p>
+                <!-- End Contact -->
+                <footer class="footer">
+                    <div class="content container">
+                        <div class="row">
+                            <div class="col-xs-0 text-right">
+                                <p class="margin-b-0" ><a class="fweight-700">LP</a> Web Developer: <a >BirdOnTheBranch  </a></p>
+                            </div>
+                        </div>
+                        <!--// end row -->
                     </div>
-                </div>
-                <!--// end row -->
-            </div>
-        </footer>
-        <!--========== END PAGE LAYOUT ==========-->
+                </footer>
+                <!--========== END PAGE LAYOUT ==========-->
 
-        <!-- Back To Top -->
-        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+                <!-- Back To Top -->
+                <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
 
         <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
         <!-- CORE PLUGINS -->
